@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sanctum"
+version = "1.0"
+description = "A python lib for creating forbidden import paths, restricting external import of a module while maintaining accessibility within the library."
+requires-python = ">=3.8"
+dependencies = ["colorama"]
+readme = {file = "README.md", content-type = "text/markdown"}
+license = { file = "LICENSE" }
+authors = [{name = "Soumyo Deep Gupta", email = "deep@d33p0st.in"}]
+maintainers = [{name = "Soumyo Deep Gupta", email = "deep@d33p0st.in"}]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+
+[tool.setuptools.package-data]
+"sanctum" = ["*.pyi"]
+
+[project.urls]
+GitHub = "https://github.com/d33p0st/sanctum"
+Documentation = "https://d33p0st.in/docs/sanctum/"
